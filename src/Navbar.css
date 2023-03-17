@@ -10,6 +10,7 @@ nav {
     z-index: 9999;
     border: none;
     text-align: right;
+    
   }
   
   .nav-link {
@@ -19,5 +20,7 @@ nav {
   
   .navbar-brand {
     font-weight: bold;
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
   }
   

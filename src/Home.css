@@ -1,0 +1,14 @@
+.image-container {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.my-image6 {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

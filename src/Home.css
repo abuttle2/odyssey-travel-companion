@@ -62,4 +62,17 @@
   }
   }
 
+  /* make the jumbotron images responsive by using media queries */ 
 
+@media (max-width: 576px) {
+  .my-image,.my-image3,.my-image5 {
+      width: 210px;
+      height: 200px;
+    
+  }
+}
+
+.jumbotron {
+ 
+  padding-bottom: 290px;
+}

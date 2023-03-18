@@ -12,8 +12,6 @@
   top: 0;
   left: 0;
 }
-/* text styling*/
-
 .text-container {
   position: absolute;
   top: 50%;
@@ -34,7 +32,7 @@
   font-weight: 300;
 }
 
-/* triple images styling*/
+
 .my-image,
 .my-image3,
 .my-image5 {

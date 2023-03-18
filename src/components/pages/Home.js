@@ -23,7 +23,24 @@ function Home() {
         <img className="my-image" src={travel1} alt="travel1" />
         <img className="my-image3" src={odyssey} alt="odyssey" />
         <img className="my-image5" src={travel5} alt="travel5" />
-      </div>             
+      </div>  
+      <div className="col-sm-12 col-md-12 col-lg-12 text-center download">
+        <h2 className="section-heading abt4">
+            Visit our About page and discover what all the buzz is about!
+        </h2>
+        <p className="wkfun1">
+            Our app is also available on any mobile device! Download now to get started!
+        </p>
+        <div className="badges">
+            <a className="badge-link" href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+            <img className="my-image7" src={google-play-badge.png} alt="google play icon" />
+            </a>
+            <a className="badge-link" href="https://www.apple.com/uk/app-store" target="_blank" rel="noopener noreferrer">
+            <img className="my-image8"src={app-store-badge.png} alt="app store icon" />
+            </a>
+        </div>
+        </div>
+           
     </div>
   );
 }

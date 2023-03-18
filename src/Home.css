@@ -12,6 +12,7 @@
   top: 0;
   left: 0;
 }
+
 .text-container {
   position: absolute;
   top: 50%;
@@ -32,7 +33,6 @@
   font-weight: 300;
 }
 
-
 .my-image,
 .my-image3,
 .my-image5 {
@@ -48,5 +48,18 @@
  
   padding: 2rem;
 }
+
+/* make the jumbotron text responsive by using media queries */
+
+@media (max-width: 576px) {
+  .jumbotron h1 {
+  font-size: 34px;
+  }
+  
+  .jumbotron h2 {
+    display: inline;
+  font-size: 18px;
+  }
+  }
 
 

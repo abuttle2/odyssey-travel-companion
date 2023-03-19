@@ -3,6 +3,8 @@ import odyssey from '../odyssey.gif';
 import travel5 from '../travel5.gif';
 import travel1 from '../travel1.gif';
 import travel6 from '../travel6.gif';
+import appstore from '../app-store-badge.png';
+import googleplay from '../google-play-badge.png';
 
 
 function Home() {
@@ -33,13 +35,13 @@ function Home() {
         </p>
         <div className="badges">
             <a className="badge-link" href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-            <img className="my-image7" src={google-play-badge.png} alt="google play icon" />
+            <img className="my-image7" src={googleplay} alt="google play icon" />
             </a>
             <a className="badge-link" href="https://www.apple.com/uk/app-store" target="_blank" rel="noopener noreferrer">
-            <img className="my-image8"src={app-store-badge.png} alt="app store icon" />
+            <img className="my-image8" src={appstore} alt="app store icon" />
             </a>
         </div>
-        </div>
+      </div>
            
     </div>
   );

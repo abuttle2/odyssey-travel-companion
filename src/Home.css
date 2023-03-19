@@ -49,6 +49,28 @@
   padding: 2rem;
 }
 
+.abt4 {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.wkfun {
+  font-size: 24px;
+}
+
+/* download styling */
+.download .badges .badge-link {
+  margin-bottom: 25px;
+}
+
+.download .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+.download .badges .badge-link img {
+  height: 60px;
+}
+
 /* make the jumbotron text responsive by using media queries */
 
 @media (max-width: 576px) {
@@ -72,7 +94,32 @@
   }
 }
 
+@media (max-width: 576px) {
 .jumbotron {
- 
   padding-bottom: 290px;
+}
+}
+  /* make the download text responsive by using media queries */ 
+
+@media (max-width: 576px) {
+
+.download{
+  margin-top: 280px;
+ 
+}
+}
+@media (max-width: 576px) {
+
+  .wkfun1{
+    margin-top: 10px;
+   
+  }
+}
+
+@media (max-width: 576px) {
+
+ .badge {
+    
+   
+  }
 }

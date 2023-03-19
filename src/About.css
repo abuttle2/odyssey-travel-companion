@@ -1,0 +1,22 @@
+
+.my-image1,
+.my-image2,
+.my-image4 {
+  flex-basis: 33%;
+  flex-grow: 1;
+  max-width: 440px;
+  margin-right: 13px;
+}
+
+.my-image1,.my-image2{
+
+    padding-right: 12px;
+}
+
+.my-image1{
+    padding-left: 7px;
+}
+.jumbotron {
+ 
+  padding: 2rem;
+}

@@ -14,9 +14,9 @@ function About() {
             {/* <div className="col-sm-12 col-md-3 col-lg-3">  */}
             {/* <img className="my-image4" src={travel5} alt="travel5"/> */}
             <div className="image-container d-flex flex-wrap">
-                <img className="my-image1" src={travel1} alt="hotels" />
-                <img className="my-image2" src={odyssey} alt="foods" />
-                <img className="my-image4" src={travel5} alt="tours" />
+                <img className="my-image1" src={hotels} alt="hotels" />
+                <img className="my-image2" src={foods} alt="foods" />
+                <img className="my-image4" src={tours} alt="tours" />
             </div>  
           </div>             
     )

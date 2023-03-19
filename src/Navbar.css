@@ -1,17 +1,8 @@
-nav {
-    background-color: #17a2b8;
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 1rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    border: none;
-    text-align: right;
-    
-  }
+.navbar .navbar-nav {
+  margin: 0 0 0 auto;
+  font-size: 1.4rem;
+
+}
   
   .nav-link {
     color: #fff;

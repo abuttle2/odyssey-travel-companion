@@ -37,7 +37,7 @@ function About() {
                     <form>
                         <div className="form-group">
                             <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
                     </form>
@@ -46,7 +46,7 @@ function About() {
                     <form>
                         <div className="form-group">
                             <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
                     </form>
@@ -55,7 +55,7 @@ function About() {
                     <form>
                         <div className="form-group">
                             <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
                         </div>
                         <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
                     </form>

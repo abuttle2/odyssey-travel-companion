@@ -20,18 +20,44 @@
 }
 
 /* make the jumbotron text responsive by using media queries */
-
-/* @media (max-width: 576px) {
+ @media (max-width: 576px) {
     .abt7 {
     position: relative;
-    top: 530px;
+    top: 450px;
     }
-}
-
+} 
 @media (max-width: 576px) {
-    .my-image1,.my-image2 {
-    margin-bottom: 230px;
+    .abt8 {
+    position: relative;
+    top: 850px;
     }
-} */
+} 
 
+/* @media (max-width: 576px) {
+    .row.my-form {
+    margin-top: 230px;
+    }
+}  */
 
+/* @media (max-width: 576px) {
+    .abt6{
+    margin-bottom: 10px;
+    }
+}  */
+@media (max-width: 576px) {
+    .my-image2,.my-image4{
+    margin-top: 130px;
+    }
+} 
+@media (max-width: 576px) {
+    .my-image4{
+    margin-top: 220px;
+    }
+} 
+@media (max-width: 576px) {
+    .my-image1 {
+    position: relative;
+    top: -130px;
+    /* margin-bottom: 10px; */
+    }
+} 

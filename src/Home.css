@@ -69,6 +69,7 @@
 
 .download .badges .badge-link img {
   height: 60px;
+  margin-right: 10px;
 }
 
 /* make the jumbotron text responsive by using media queries */
@@ -122,7 +123,6 @@
 .download .badges .badge-link img {
   
   height: 40px;
-  margin-right: 10px;
     
   }
 }

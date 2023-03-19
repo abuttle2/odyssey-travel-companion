@@ -12,58 +12,70 @@ function About() {
                 <p className="text-justify abt5">Odyssey Travel Companion provides tourists with up-to-date information on popular attractions, events, restaurants, and accommodations in the area, so that they can make informed decisions about how to spend their time and money during their trip. Users are able to search for and view detailed information on each item including descriptions and photos.</p>
                 {/* <br></br> */}
 
-                <p className="text-justify abt5">Enter your city of choice below to search for nearby popular attractions, restaurants and accommodation:</p>
+                <p className="text-justify abt5">Enter your city of choice below to search for nearby popular attractions, restaurants and accommodations:</p>
             </div>
+            <div className="container">
 
-            <div className="row">
-                <div className="col-sm-4 text-center">
-                    <h3 className="display-4 abt6">Accomodation</h3>
+                <div className="row">
+                    <div className="col-sm-4 col-md-4 text-center">
+                        <h3 className="display-4 abt6">Accomodations</h3>
+                    </div>
+                    <div className="col-sm-4 col-md-4 text-center">
+                        <h3 className="display-4 abt7">Restaurants</h3>
+                    </div>
+                    <div className="col-sm-4 col-md-4 text-center">
+                        <h3 className="display-4 abt8">Attractions</h3>
+                    </div>
                 </div>
-                <div className="col-sm-4 text-center">
-                    <h3 className="display-4 abt6">Restaurants</h3>
-                </div>
-                <div className="col-sm-4 text-center">
-                    <h3 className="display-4 abt6">Attractions</h3>
-                </div>
-            </div>
 
-            <div className="image-container d-flex flex-wrap">
-                <img className="my-image1" src={hotels} alt="hotels" />
-                <img className="my-image2" src={foods} alt="foods" />
-                <img className="my-image4" src={tours} alt="tours" />
-            </div>
-            <div className="row d-flex justify-content-center my-form">
-                <div className="col-4">
-                    <form>
-                        <div className="form-group">
-                            <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
-                        </div>
-                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
-                    </form>
+                <div className="row">
+                    <div className="col-sm-4 col-md-4 text-center">
+
+                        <img className="my-image1" src={hotels} alt="hotels" />
+                    </div>
+                    <div className="col-sm-4 col-md-4 text-center">
+
+                        <img className="my-image2" src={foods} alt="foods" />
+                    </div>
+                    <div className="col-sm-4 col-md-4 text-center">
+
+                        <img className="my-image4" src={tours} alt="tours" />
+                    </div>
                 </div>
-                <div className="col-4">
-                    <form>
-                        <div className="form-group">
-                            <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
-                        </div>
-                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
-                    </form>
-                </div>
-                <div className="col-4">
-                    <form>
-                        <div className="form-group">
-                            <label htmlFor="cityInput">Enter city name:</label>
-                            <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
-                        </div>
-                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
-                    </form>
-                </div>
-        
+                
+                <div className="row justify-content-center my-form">
+                    <div className="col-sm-4 col-md-4">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="cityInput">Enter city name:</label>
+                                <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
+                            </div>
+                            <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                        </form>
+                    </div>
+
+                    <div className="col-sm-4 col-md-4">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="cityInput">Enter city name:</label>
+                                <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
+                            </div>
+                            <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                        </form>
+                    </div>
+
+                    <div className="col-sm-4 col-md-4">
+                        <form>
+                            <div className="form-group">
+                                <label htmlFor="cityInput">Enter city name:</label>
+                                <input type="text" className="form-control col-6" id="cityInput" placeholder="City name" />
+                            </div>
+                            <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                        </form>
+                    </div>
+                 </div>
             </div>
           </div> 
-          
           
     )
 }

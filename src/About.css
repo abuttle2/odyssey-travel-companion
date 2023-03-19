@@ -2,20 +2,10 @@
 .my-image1,
 .my-image2,
 .my-image4 {
-  flex-basis: 33%;
-  flex-grow: 1;
-  max-width: 440px;
-  margin-right: 13px;
+  max-width: 350px;
+  min-height: 250px;
 }
 
-.my-image1,.my-image2{
-
-    padding-right: 14px;
-}
-
-.my-image1{
-    padding-left: 3px;
-}
 .jumbotron {
  
   padding: 2rem;
@@ -23,5 +13,25 @@
 /* styling to jumbotron text */
 .abt5{
     font-size: 20px;
-
 }
+
+.my-form{
+    margin-top: 10px;
+}
+
+/* make the jumbotron text responsive by using media queries */
+
+/* @media (max-width: 576px) {
+    .abt7 {
+    position: relative;
+    top: 530px;
+    }
+}
+
+@media (max-width: 576px) {
+    .my-image1,.my-image2 {
+    margin-bottom: 230px;
+    }
+} */
+
+

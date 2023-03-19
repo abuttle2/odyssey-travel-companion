@@ -115,11 +115,21 @@
    
   }
 }
+  /* make the download images responsive by using media queries */ 
 
 @media (max-width: 576px) {
 
- .badge {
+.download .badges .badge-link img {
+  
+  height: 40px;
+  margin-right: 10px;
     
-   
   }
 }
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding-bottom: 30px;
+  }
+  }
+  

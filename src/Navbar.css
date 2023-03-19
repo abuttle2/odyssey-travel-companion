@@ -5,7 +5,7 @@
 }
   
   .nav-link {
-    color: #fff;
+    color: #fff!important;
     margin-left: 1.5rem;
   }
   
@@ -13,6 +13,7 @@
     font-weight: bold;
     font-family: 'Tangerine', serif;
     font-size: 40px;
+    color: wheat!important;
   }
 /* make toggle button white */
   .navbar-toggler {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-info">
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
       <Link to="/" className="navbar-brand">
         Odyssey Travel Companion
       </Link>
@@ -15,10 +15,10 @@ function Navbar() {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
-      >
+      >Menu
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link to="/" className="nav-link">

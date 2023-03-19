@@ -14,4 +14,14 @@
     font-family: 'Tangerine', serif;
     font-size: 40px;
   }
-
+/* make toggle button white */
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: wheat!important;
+    transition: color 0.3s linear;
+  }
+  
+  

@@ -35,15 +35,35 @@ function About() {
             <div className="row d-flex justify-content-center my-form">
                 <div className="col-4">
                     <form>
-                <div className="form-group">
-                    <label htmlFor="cityInput">Enter city name:</label>
-                    <input type="text" className="form-control" id="cityInput" placeholder="City name" />
-                </div>
-                    <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                        <div className="form-group">
+                            <label htmlFor="cityInput">Enter city name:</label>
+                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                        </div>
+                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
                     </form>
                 </div>
+                <div className="col-4">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="cityInput">Enter city name:</label>
+                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                        </div>
+                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                    </form>
+                </div>
+                <div className="col-4">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="cityInput">Enter city name:</label>
+                            <input type="text" className="form-control" id="cityInput" placeholder="City name" />
+                        </div>
+                        <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
+                    </form>
+                </div>
+        
             </div>
           </div> 
+          
           
     )
 }

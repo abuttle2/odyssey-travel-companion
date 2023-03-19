@@ -17,7 +17,7 @@ function Home() {
             Odyssey: Your Ultimate Guide Travel Companion 
           </h1>
           <h2 className="lead">
-            The fabulous choice for up-to-date information on all tourist attractions, events, restaurants and accommodation planning.
+          For the latest updates on tourist attractions, events, restaurants and accommodation planning, choose our amazing resource.
           </h2>
         </div>
       </div>
@@ -28,10 +28,10 @@ function Home() {
       </div>  
       <div className="col-sm-12 col-md-12 col-lg-12 text-center download">
         <h2 className="section-heading abt4">
-            Visit our About page and discover what all the buzz is about!
+        Check out our About page to uncover a world of excitement! 
         </h2>
         <p className="wkfun1">
-            Our app is also available on any mobile device! Download now to get started!
+        You can also access our app on any mobile device, so start by downloading it today!
         </p>
         <div className="badges">
             <a className="badge-link" href="https://play.google.com" target="_blank" rel="noopener noreferrer">

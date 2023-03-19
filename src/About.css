@@ -33,19 +33,10 @@
     }
 } 
 
-/* @media (max-width: 576px) {
-    .row.my-form {
-    margin-top: 230px;
-    }
-}  */
 
-/* @media (max-width: 576px) {
-    .abt6{
-    margin-bottom: 10px;
-    }
-}  */
+/* media queries for images  */
 @media (max-width: 576px) {
-    .my-image2,.my-image4{
+    .my-image2{
     margin-top: 130px;
     }
 } 
@@ -57,7 +48,15 @@
 @media (max-width: 576px) {
     .my-image1 {
     position: relative;
-    top: -130px;
-    /* margin-bottom: 10px; */
+    top: -140px;
+    }
+} 
+
+/* media queries for search form  */
+ @media (max-width: 576px) {
+    .form1 {
+        position: relative;
+        top: -980px;
+        padding-left: 35px;
     }
 } 

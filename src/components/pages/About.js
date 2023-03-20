@@ -2,6 +2,7 @@ import React from 'react';
 import hotels from '../hotels.gif';
 import foods from '../foods.gif';
 import tours from '../tours.gif';
+import Map from "../Map"
 
 
 function About() {
@@ -41,7 +42,7 @@ function About() {
                         <img className="my-image4" src={tours} alt="tours" />
                     </div>
                 </div>
-                
+
                 <div className="row justify-content-center my-form">
                     <div className="col-sm-4 col-md-4 form1">
                         <form>
@@ -72,10 +73,11 @@ function About() {
                             <button type="submit" className="btn btn-primary" id="submitBtn">Submit</button>
                         </form>
                     </div>
-                 </div>
+                </div>
             </div>
-          </div> 
-          
+            <div className="container p-3 my-3 col-sm-12 col-lg-6 d-flex justify-content-end" ><Map></Map> </div>
+        </div>
+
     )
 }
 export default About;

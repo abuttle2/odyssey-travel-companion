@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Autocomplete } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Autocomplete, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '800px',
@@ -8,7 +8,8 @@ const containerStyle = {
 
 function Map() {
   const [searchBox, setSearchBox] = useState(null);
-  const [center, setCenter] = useState({ lat: 0, lng: 0 });
+  const [center, setCenter] = useState({ lat: 54.3781, lng: -2.2137 });
+  const [places, setPlaces] = useState([]);
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);
@@ -21,6 +22,18 @@ function Map() {
         setCenter({
           lat: place.geometry.location.lat(),
           lng: place.geometry.location.lng()
+        });
+
+        const service = new window.google.maps.places.PlacesService(document.createElement('div'));
+
+        service.nearbySearch({
+          location: center,
+          radius: 1000, // 1 kilometer
+          type: ['restaurant', 'lodging', 'tourist_attraction']
+        }, (results, status) => {
+          if (status === 'OK') {
+            setPlaces(results);
+          }
         });
       }
     }

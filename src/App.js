@@ -8,8 +8,8 @@ import './ContactUs.css';
 import Navbar from './components/pages/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Footer from './components/pages/Footer';
 import ContactUs from './components/pages/ContactUs';
+import Footer from './components/pages/Footer';
 
 
 function App() {
@@ -20,8 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contactUs" element={<ContactUs />} />
-      </Routes>
-      <ContactUs />
+      </Routes>      
       <Footer />
     </Router>
   );

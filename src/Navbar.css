@@ -1,0 +1,28 @@
+.navbar .navbar-nav {
+  margin: 0 0 0 auto;
+  font-size: 1.4rem;
+
+}
+  
+  .nav-link {
+    color: #fff!important;
+    margin-left: 1.5rem;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+    color: wheat!important;
+  }
+/* make toggle button white */
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: wheat!important;
+    transition: color 0.3s linear;
+  }
+  
+  

@@ -1,0 +1,86 @@
+
+.my-image1,
+.my-image2,
+.my-image4 {
+  max-width: 350px;
+  min-height: 250px;
+}
+
+.jumbotron {
+ 
+  margin-bottom: 5px;
+}
+/* styling to jumbotron text */
+.abt5{
+    font-size: 20px;
+}
+
+.my-form{
+    margin-top: 10px;
+}
+
+/* make the jumbotron text responsive by using media queries */
+ @media (max-width: 576px) {
+    .abt7 {
+    position: relative;
+    top: 440px;
+    }
+} 
+@media (max-width: 576px) {
+    .abt8 {
+    position: relative;
+    top: 870px;
+    }
+} 
+
+
+/* media queries for images  */
+@media (max-width: 576px) {
+    .my-image2{
+    margin-top: 120px;
+    }
+} 
+@media (max-width: 576px) {
+    .my-image4{
+    margin-top: 250px;
+    }
+} 
+@media (max-width: 576px) {
+    .my-image1 {
+    position: relative;
+    top: -140px;
+    }
+} 
+
+/* media queries for search form  */
+ @media (max-width: 576px) {
+    .form1 {
+        position: relative;
+        top: -995px;
+        padding-left: 35px;
+    }
+} 
+
+@media (max-width: 576px) {
+    .form2 {
+        position: relative;
+        top: -610px;
+        padding-left: 35px;
+    }
+} 
+
+@media (max-width: 576px) {
+    .form3 {
+        position: relative;
+        top: -230px;
+        padding-left: 35px;
+        margin-bottom: -130px;
+    }
+}
+
+/* @media (max-width: 576px) {
+    .sub3 {
+        
+        padding-bottom: -130px;
+    }
+} */

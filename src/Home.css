@@ -1,0 +1,135 @@
+.image-container {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+
+.my-image6 {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.my-image,
+.my-image3,
+.my-image5 {
+  flex-basis: 33%;
+  flex-grow: 1;
+  max-width: 430px;
+}
+
+.my-image3 {
+  max-width: 550px;
+}
+.jumbotron {
+ 
+  padding: 2rem;
+}
+
+.abt4 {
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.wkfun {
+  font-size: 24px;
+}
+
+/* download styling */
+.download .badges .badge-link {
+  margin-bottom: 25px;
+}
+
+.download .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+.download .badges .badge-link img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* make the jumbotron text responsive by using media queries */
+
+@media (max-width: 576px) {
+  .jumbotron h1 {
+  font-size: 36px;
+  }
+  
+  .jumbotron h2 {
+    display: inline;
+  font-size: 18px;
+  }
+  }
+
+  /* make the jumbotron images responsive by using media queries */ 
+
+@media (max-width: 576px) {
+  .my-image,.my-image3,.my-image5 {
+      width: 210px;
+      height: 200px;
+    
+  }
+}
+
+@media (max-width: 576px) {
+.jumbotron {
+  padding-bottom: 290px;
+}
+}
+  /* make the download text responsive by using media queries */ 
+
+@media (max-width: 576px) {
+
+.download{
+  margin-top: 280px;
+ 
+}
+}
+@media (max-width: 576px) {
+
+  .wkfun1{
+    margin-top: 10px;
+   
+  }
+}
+  /* make the download images responsive by using media queries */ 
+
+@media (max-width: 576px) {
+
+.download .badges .badge-link img {
+  
+  height: 40px;
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding-bottom: 30px;
+  }
+  }
+  

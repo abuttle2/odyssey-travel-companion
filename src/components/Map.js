@@ -6,6 +6,9 @@ const containerStyle = {
   height: '600px'
 };
 
+const libraries = ["places"];
+
+
 function Map() {
   const [searchBox, setSearchBox] = useState(null);
   const [center, setCenter] = useState({ lat: 54.3781, lng: -2.2137 });
@@ -32,7 +35,7 @@ function Map() {
   return (
     <LoadScript
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"
-      libraries={["places"]}
+      libraries={libraries}
     >
      <GoogleMap
         mapContainerStyle={containerStyle}

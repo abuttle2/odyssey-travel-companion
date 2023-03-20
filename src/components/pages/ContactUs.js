@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../contactUs.css'
 
-function Contact () {
+
+function ContactUs () {
     return (
         <h1>Contact Us</h1>
     )
 }
 
-export default Contact;
+export default ContactUs;

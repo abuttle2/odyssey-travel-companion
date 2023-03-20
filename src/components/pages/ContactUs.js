@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import { Container, Row, Col,Form } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 
 function ContactUs() {
     const [name,setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = async (e) =>{}
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        setLoading(true);
+        
+    }
     
   
         return (            
@@ -49,8 +54,9 @@ function ContactUs() {
                                 required                             
                             />
                             </Form.Group>
-
-
+                            <Button variant="dark" type="submit" disabled={loading}>
+                                {loading ? 'Submiting...' : 'Send message'}
+                            </Button>
                         </Form>                    
                     </Col>
                 </Row>

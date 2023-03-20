@@ -3,6 +3,9 @@ import { Container, Row, Col, } from 'react-bootstrap';
 
 
 function ContactUs() {
+    const [name,setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
   
         return (            
             <Container className="py-5">

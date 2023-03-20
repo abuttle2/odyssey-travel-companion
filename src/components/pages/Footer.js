@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Footer () {
     return (
-      <footer> 
+      <footer className="footer"> 
         <Container>
             <Row>
                 <Col>

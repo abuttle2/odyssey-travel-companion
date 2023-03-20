@@ -21,23 +21,25 @@ function Map() {
       if (place.geometry) {
         setCenter({
           lat: place.geometry.location.lat(),
-          lng: place.geometry.location.lng()
-        });
-
-        const service = new window.google.maps.places.PlacesService(document.createElement('div'));
-
-        service.nearbySearch({
-          location: center,
-          radius: 1000, // 1 kilometer
-          type: ['restaurant', 'lodging', 'tourist_attraction']
-        }, (results, status) => {
-          if (status === 'OK') {
-            setPlaces(results);
-          }
+          lng: place.geometry.location.lng(),
+          zoom: 15
+        }, () => {
+          const service = new window.google.maps.places.PlacesService(document.createElement('div'));
+  
+          service.nearbySearch({
+            location: center,
+            radius: 1000, // 1 kilometer
+            type: ['restaurant', 'lodging', 'tourist_attraction']
+          }, (results, status) => {
+            if (status === 'OK') {
+              setPlaces(results);
+            }
+          });
         });
       }
     }
   }
+  
 
   return (
     <LoadScript
@@ -47,7 +49,7 @@ function Map() {
      <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={12}
       >
         <Autocomplete
         onLoad={onLoad}
@@ -71,8 +73,15 @@ function Map() {
           marginLeft: "-120px"
         }} />
       </Autocomplete>
-        { /* Child components, such as markers, info windows, etc. */}
-        <></>
+      {places.map(place => (
+          <Marker
+            key={place.place_id}
+            position={{
+              lat: place.geometry.location.lat(),
+              lng: place.geometry.location.lng()
+            }}
+          />
+        ))}
       </GoogleMap>
     </LoadScript>
   );

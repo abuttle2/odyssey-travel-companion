@@ -1,45 +1,17 @@
 import React from 'react';
-import { useState } from 'react';
+import { Container, Row, Col, } from 'react-bootstrap';
 
 
-function ContactUs () {
-        const [inputs, setInputs] = useState({});
-
-        const handleChange = (event) => {
-          const name = event.target.name;
-          const value = event.target.value;
-          setInputs(values => ({...values, [name]: value}))
-        }
-      
-        const handleSubmit = (event) => {
-          event.preventDefault();
-          console.log(inputs);
-        }
-      
-        return (
-          <form onSubmit={handleSubmit}>
-            <label>Enter your name:
-            <input 
-              type="text" 
-              name="username" 
-              value={inputs.username || ""} 
-              onChange={handleChange}
-            />
-            </label>
-            <label>Enter your e-mail:
-              <input 
-                type="text" 
-                name="email" 
-                value={inputs.email || ""} 
-                onChange={handleChange}
-              />
-              </label>
-              <input type="submit" />
-          </form>
-        
-        
-        
+function ContactUs() {
+  
+        return (            
+            <Container className="py-5">
+                <Row>
+                    <Col className="col-sm-12 col-md-6 col-lg-4 mx-auto">
+                        <h3 className="text-form text-center mb-4">Get in Touch</h3>                      
+                    </Col>
+                </Row>
+            </Container>            
     )
 }
-
 export default ContactUs;

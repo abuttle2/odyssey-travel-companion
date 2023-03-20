@@ -11,3 +11,21 @@
     text-decoration: none;
     text-size-adjust: auto;
 }
+
+.footer .social_media-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: black;
+    }
+
+.footer .copyright-text {
+    color: red;
+    margin-top: 90px;
+    margin-left: 300px;
+    text-align: left;
+
+}

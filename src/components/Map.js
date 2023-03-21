@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Autocomplete, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Autocomplete, Marker, InfoWindow } from '@react-google-maps/api';
 import debounce from 'lodash.debounce';
 
 const containerStyle = {
@@ -24,6 +24,7 @@ const searchStyle = {
 };
 
 const libraries = ["places"];
+
 class LoadScriptOnlyIfNeeded extends LoadScript {
   componentDidMount() {
     const cleaningUp = true
@@ -50,6 +51,7 @@ function Map() {
   const [center, setCenter] = useState({ lat: 54.3781, lng: -2.2137 });
   const [zoom, setZoom] = useState(6);
   const [places, setPlaces] = useState([]);
+  const [activeMarker, setActiveMarker] = useState(null);
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);

@@ -6,6 +6,7 @@
   min-height: 250px;
 }
 
+
 .jumbotron {
  
   margin-bottom: 5px;
@@ -13,42 +14,37 @@
 /* styling to jumbotron text */
 .abt5{
     font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.my-form{
-    margin-top: 10px;
-}
 
 /* make the jumbotron text responsive by using media queries */
  @media (max-width: 576px) {
     .abt7 {
     position: relative;
-    top: 440px;
+    top: 300px;
     }
 } 
 @media (max-width: 576px) {
     .abt8 {
     position: relative;
-    top: 870px;
+    top: 600px;
     }
 } 
 
 
 /* media queries for images  */
-@media (max-width: 576px) {
-    .my-image2{
-    margin-top: 120px;
-    }
-} 
+
 @media (max-width: 576px) {
     .my-image4{
-    margin-top: 250px;
+    margin-top: 100px;
     }
 } 
 @media (max-width: 576px) {
     .my-image1 {
     position: relative;
-    top: -140px;
+    top: -110px;
     }
 } 
 

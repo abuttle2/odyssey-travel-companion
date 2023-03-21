@@ -12,7 +12,7 @@ function Footer () {
         <Container>
             <Row>
               <Col className='col-sm-12 col-md-6 col-lg-8'>
-                <p className='copyright-text'>&copy; Copyright © 2022 | All Rights Reserved.</p>          
+                <p className='copyright-text'>&copy; Copyright 2023 | All Rights Reserved.</p>          
               </Col>
                 <Col className='col-sm-12 col-md-6 col-lg-4 text-center py-3'>
                   <ul className='social_media-icons'>

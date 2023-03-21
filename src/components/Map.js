@@ -23,6 +23,14 @@ const searchStyle = {
   marginLeft: "-120px"
 };
 
+const infoWindowStyle = {
+  background: 'white',
+  border: '1px solid black',
+  padding: '10px',
+  fontSize: '16px',
+  textAlign: 'center'
+};
+
 const libraries = ["places"];
 
 class LoadScriptOnlyIfNeeded extends LoadScript {
@@ -130,15 +138,16 @@ function Map() {
               lng: selectedPlace.geometry.location.lng(),
             }}
             onCloseClick={handleCloseClick}
+            options={{ maxWidth: 300 }}
           >
-            <div>
+            <div style={infoWindowStyle}>
               <h2>{selectedPlace.name}</h2>
-              <p>{selectedPlace.formatted_address}</p>
+              <p>Rating: {selectedPlace.rating}/5</p>
               {selectedPlace.photos && (
                 <img
                   src={selectedPlace.photos[0].getUrl()}
                   alt={selectedPlace.name}
-                  style={{ maxWidth: '50%' }}
+                  style={{ maxWidth: '75%' }}
                 />
               )}
             </div>

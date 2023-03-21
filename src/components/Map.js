@@ -76,6 +76,14 @@ function Map() {
           type: ['restaurant', 'lodging', 'tourist_attraction']
         }, (results, status) => {
           if (status === 'OK') {
+            results.forEach((result) => {
+              console.log('Place ID:', result.place_id);
+              console.log('Name:', result.name);
+              console.log('Latitude:', result.geometry.location.lat());
+              console.log('Longitude:', result.geometry.location.lng());
+              console.log('Address:', result.vicinity);
+              console.log('');
+            });
             setPlaces(results);
           }
         });

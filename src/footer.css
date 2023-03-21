@@ -2,9 +2,8 @@
     margin: 10px auto;
     height: auto;
     width: auto;
-    padding: 2px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 10px;
     text-align: center;
     text-decoration: none;
     text-size-adjust: auto;
@@ -23,7 +22,7 @@
 .copyright-text {
     color: wheat;
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 20px;
     text-align: left;
 }
 

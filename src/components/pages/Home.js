@@ -14,7 +14,7 @@ function Home() {
         <img className="my-image6" src={travel6} alt="travel6" />
         <div className="text-container">
           <h1 className="display-4">
-            Odyssey: Your Ultimate Guide Travel Companion 
+            Odyssey: Your Ultimate Travel Guide 
           </h1>
           <h2 className="lead">
           For the latest updates on tourist attractions, events, restaurants and accommodation planning, choose our amazing resource.

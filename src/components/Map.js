@@ -51,7 +51,7 @@ function Map() {
   const [center, setCenter] = useState({ lat: 54.3781, lng: -2.2137 });
   const [zoom, setZoom] = useState(6);
   const [places, setPlaces] = useState([]);
-  const [activeMarker, setActiveMarker] = useState(null);
+  const [selectedPlace, setSelectedPlace] = useState(null);
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);
@@ -86,11 +86,11 @@ function Map() {
   }, 500);
 
   const handleMarkerClick = (marker) => {
-    setActiveMarker(marker);
+    setSelectedPlace(marker);
   }
 
   const handleCloseClick = () => {
-    setActiveMarker(null);
+    setSelectedPlace(null);
   }
 
   return (
@@ -120,8 +120,30 @@ function Map() {
               lat: place.geometry.location.lat(),
               lng: place.geometry.location.lng()
             }}
+            onClick={() => handleMarkerClick(place)}
           />
         ))}
+        {selectedPlace && (
+          <InfoWindow
+            position={{
+              lat: selectedPlace.geometry.location.lat(),
+              lng: selectedPlace.geometry.location.lng(),
+            }}
+            onCloseClick={handleCloseClick}
+          >
+            <div>
+              <h2>{selectedPlace.name}</h2>
+              <p>{selectedPlace.formatted_address}</p>
+              {selectedPlace.photos && (
+                <img
+                  src={selectedPlace.photos[0].getUrl()}
+                  alt={selectedPlace.name}
+                  style={{ maxWidth: '50%' }}
+                />
+              )}
+            </div>
+          </InfoWindow>
+        )}
       </GoogleMap>
     </LoadScriptOnlyIfNeeded>
   );

@@ -20,7 +20,8 @@ function ContactUs() {
             formData.append(`message`, message);
             const response = await fetch('https://formsubmit.co/ajax/199c2ccd71ba3c110491bf2cbccdb492', {
                 method: 'POST',
-                BODY: formData,    
+                body: formData,    
+                
             });
             const result = await response.json();
             if (result.success) {
@@ -37,10 +38,20 @@ function ContactUs() {
           
   
         return (            
-            <Container className="py-5">
-                <Row>
+            <Container id="form" className="form py-5">
+                <Row className='form-row'>
                     <Col className="col-sm-12 col-md-6 col-lg-4 mx-auto">
-                        <h3 className="text-form text-center mb-4">Get in Touch</h3> 
+                        <h3 className="text-form text-center mb-4">Get in Touch</h3>
+                        {success && (
+                            <Alert variant="success" className='text-center'>
+                                Thank you for your message!
+                            </Alert>
+                        )} 
+                        {error && (
+                            <Alert variant="danger" className="text-center">
+                                Something went wrong! Please try again later!
+                            </Alert>
+                        )}
                         <Form onSubmit={handleSubmit}>
                             <Form.Group controlId="name">
                             <Form.Label>Name</Form.Label>
@@ -68,14 +79,14 @@ function ContactUs() {
                             <Form.Label>Message</Form.Label>
                             <Form.Control
                                 type="textarea"
-                                rows={3}
+                                rows={10}
                                 placeholder="Enter message"
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 required                             
                             />
                             </Form.Group>
-                            <Button variant="dark" type="submit" disabled={loading}>
+                            <Button className="Sbtn" variant="dark" type="submit" disabled={loading}>
                                 {loading ? 'Submiting...' : 'Send message'}
                             </Button>
                         </Form>                    

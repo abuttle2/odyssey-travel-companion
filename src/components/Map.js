@@ -85,6 +85,14 @@ function Map() {
     }
   }, 500);
 
+  const handleMarkerClick = (marker) => {
+    setActiveMarker(marker);
+  }
+
+  const handleCloseClick = () => {
+    setActiveMarker(null);
+  }
+
   return (
     <LoadScriptOnlyIfNeeded
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"

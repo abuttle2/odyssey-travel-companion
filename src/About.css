@@ -52,35 +52,3 @@
     }
 } 
 
-/* media queries for search form  */
- @media (max-width: 576px) {
-    .form1 {
-        position: relative;
-        top: -995px;
-        padding-left: 35px;
-    }
-} 
-
-@media (max-width: 576px) {
-    .form2 {
-        position: relative;
-        top: -610px;
-        padding-left: 35px;
-    }
-} 
-
-@media (max-width: 576px) {
-    .form3 {
-        position: relative;
-        top: -230px;
-        padding-left: 35px;
-        margin-bottom: -130px;
-    }
-}
-
-/* @media (max-width: 576px) {
-    .sub3 {
-        
-        padding-bottom: -130px;
-    }
-} */

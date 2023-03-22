@@ -60,6 +60,7 @@ function Map() {
   const [zoom, setZoom] = useState(6);
   const [places, setPlaces] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
+  const [radius, setRadius] = useState(1000); // 1 kilometer
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);
@@ -82,7 +83,7 @@ function Map() {
             lat: place.geometry.location.lat(),
             lng: place.geometry.location.lng(),
           },
-          radius: 1000, // 1 kilometer
+          radius: radius, // 1 kilometer
           type: ['restaurant', 'lodging', 'tourist_attraction']
         }, (results, status) => {
           if (status === 'OK') {
@@ -109,6 +110,11 @@ function Map() {
     setSelectedPlace(null);
   }
 
+  const handleRadiusChange = (event) => {
+    console.log(event.target.value);
+    setRadius(parseInt(event.target.value, 10));
+  };
+
   return (
     <LoadScriptOnlyIfNeeded
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"
@@ -124,7 +130,8 @@ function Map() {
             min="1000"
             max="10000"
             step="100"
-            value={1000}
+            value={radius}
+            onChange={handleRadiusChange}
             id="search-radius"
           />
 

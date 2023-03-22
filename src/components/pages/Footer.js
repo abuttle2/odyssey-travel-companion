@@ -7,13 +7,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Footer () {
     return (
-      <footer className="footer bg-dark" fixed={"bottom"}> 
+      <footer className="footer  bg-dark" fixed={"bottom"}> 
         <Container className='container'>
             <Row>
               <Col className='C-1'>
                 <p className='copyright-text'>&copy; Copyright 2023 | All Rights Reserved.</p>          
               </Col>
-                <Col className='C-2  text-center'>
+                <Col className='C-2  text-left'>
                   <ul className='social_media-icons'>
                     <li>
                       <a href="https://github.com/Adriana-Camarotto">

@@ -9,14 +9,14 @@ import googleplay from '../google-play-badge.png';
 
 function Home() {
   return (
-    <div className="jumbotron text-center">
+    <div className="inage-container jumbotron text-center">
       <div className="image-container">
         <img className="my-image6" src={travel6} alt="travel6" />
         <div className="text-container">
-          <h1 className="display-4">
+          <h1 className="display-4 topic1">
             Odyssey: Your Ultimate Travel Guide 
           </h1>
-          <h2 className="lead">
+          <h2 className="lead topic2">
           For the latest updates on tourist attractions, events, restaurants and accommodation planning, choose our amazing resource.
           </h2>
         </div>
@@ -25,7 +25,8 @@ function Home() {
         <img className="my-image" src={travel1} alt="travel1" />
         <img className="my-image3" src={odyssey} alt="odyssey" />
         <img className="my-image5" src={travel5} alt="travel5" />
-      </div>  
+      </div> 
+
       <div className="col-sm-12 col-md-12 col-lg-12 text-center download">
         <h2 className="section-heading abt4">
         Check out our About page to uncover a world of excitement! 

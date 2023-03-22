@@ -5,7 +5,7 @@
 }
 
 .my-image6 {
-  height: 450px;
+  height: 490px;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -18,25 +18,27 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  
   color: #fff;
 }
 
-.display-4 {
-  font-size: 3rem;
+.display-4{
+  font-size: 46px!important;
   font-weight: 300;
   margin-bottom: 1rem;
+  margin-top: -120px;
 }
 
 .lead {
   font-size: 1.5rem;
   font-weight: 300;
+  margin-top: 15px;
 }
 
 .my-image,
 .my-image3,
 .my-image5 {
- max-width: 350px;
+ max-width: 380px;
   min-height: 250px;
 }
 

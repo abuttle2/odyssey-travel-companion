@@ -2,17 +2,32 @@
 .my-image1,
 .my-image2,
 .my-image4 {
-  max-width: 380px;
+  max-width: 350px;
   min-height: 250px;
 }
-
 
 .jumbotron {
  
   margin-bottom: 5px;
 }
 /* styling to jumbotron text */
+.abt3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: -30px;
+}
 .abt5{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.abt6,.abt7,.abt8{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.abt9{
     font-size: 20px;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -23,13 +38,13 @@
  @media (max-width: 576px) {
     .abt7 {
     position: relative;
-    top: 300px;
+    top: 290px;
     }
 } 
 @media (max-width: 576px) {
     .abt8 {
     position: relative;
-    top: 600px;
+    top: 590px;
     }
 } 
 
@@ -44,7 +59,13 @@
 @media (max-width: 576px) {
     .my-image1 {
     position: relative;
-    top: -110px;
+    top: -180px;
     }
 } 
 
+@media (max-width: 576px) {
+    .my-image2 {
+    position: relative;
+    top: -40px;
+    }
+} 

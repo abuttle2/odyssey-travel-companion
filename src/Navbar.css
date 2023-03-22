@@ -12,8 +12,9 @@
   .navbar-brand {
     font-weight: bold;
     font-family: 'Tangerine', serif;
-    font-size: 40px;
+    font-size: 32px!important;
     color: wheat!important;
+    margin-left: 10px;
   }
 /* make toggle button white */
   .navbar-toggler {

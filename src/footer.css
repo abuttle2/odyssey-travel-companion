@@ -1,0 +1,149 @@
+
+
+.footer {
+    margin: 10px auto;
+    height: auto;
+    width: auto;
+    font-size: 18px;
+    line-height: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-size-adjust: auto;
+}
+
+.col-1 {
+    flex-basis: 40%;
+}
+
+.col-2 {
+    flex-basis: 60%;
+}
+
+.footer .social_media-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-left: 60px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color:  wheat;
+    }
+
+.copyright-text {
+    margin-top:  24px;
+    color: wheat;
+    margin-top: 60px;
+    margin-left: 20px;
+    text-align: left;
+    line-height: 1.5; 
+}
+
+
+/* make footer and maps-iframe responsive by using media queries */
+
+/*This media query targets devices with a maximum width of 575 pixels, such as smartphones in portrait orientation.*/
+@media(max-width: 575px) {
+    .footer {
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .footer .copyright-text,
+    .footer .social_media-icons {
+        text-align: center;
+    }
+    .C-1,
+    .C-2 {
+        flex-basis:50%;
+    }
+
+    .footer .social_media-icons{
+        margin-top: 20px;
+        
+    }
+
+    .footer .social_media-icons a {
+        font-size: 14px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* This media query targts devices with a minimum width of 992 pixels and maximum width of 1199 pixels, such as tablets in landscape orientation. */
+@media (min-width: 992px) and (max-width: 1199px){
+    .footer {
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    .footer .copyright-text,
+    .footer .social_media-icons {
+        text-align: center;
+    }
+    .C-1,
+    .C-2 {
+        flex-basis: 100%;
+        
+    }
+
+    .footer .social_media-icons {
+        margin-top: 30px;
+    }
+
+    .footer .social_media-icons li {
+        margin-right: 20px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 100%;
+  
+}
+.social_media-icons {
+    padding-left: 0;
+}
+
+.social_media-icons li {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.social_media-icons a {
+    color: #a5a7a7;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    text-align: center;
+    text-decoration: none;
+    text-size-adjust: auto;
+}
+
+.social_media-icons a:active,
+.social_media-icons a:focus,
+.social_media-icons a:hover {
+    color: wheat;
+    background-color: #4e5050;
+}
+
+.social_media-icons.size-sm a {
+    line-height: 60px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+

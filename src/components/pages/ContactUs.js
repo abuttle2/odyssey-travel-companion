@@ -37,10 +37,10 @@ function ContactUs() {
     };
           
   
-        return (            
-            <Container id="form" className="form py-5">
+        return (           
+            <Container id="form" className="form" style={{height: 600}} >
                 <Row className='form-row'>
-                    <Col className="col-sm-12 col-md-6 col-lg-4 mx-auto">
+                    <Col className="col-sm-4 col-md-4 col-lg-4 mx-auto">
                         <h3 className="text-form text-center mb-4">Get in Touch</h3>
                         {success && (
                             <Alert variant="success" className='text-center'>
@@ -92,7 +92,7 @@ function ContactUs() {
                         </Form>                    
                     </Col>
                 </Row>
-            </Container>            
+            </Container>    
     )
 }
 export default ContactUs;

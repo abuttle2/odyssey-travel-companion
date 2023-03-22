@@ -5,7 +5,7 @@
 }
 
 .my-image6 {
-  height: 600px;
+  height: 450px;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -36,14 +36,13 @@
 .my-image,
 .my-image3,
 .my-image5 {
-  flex-basis: 33%;
-  flex-grow: 1;
-  max-width: 420px;
+ max-width: 350px;
+  min-height: 250px;
 }
 
-.my-image3 {
+/* .my-image3 {
   max-width: 550px;
-}
+} */
 .jumbotron {
  
   padding: 2rem;

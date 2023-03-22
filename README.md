@@ -6,6 +6,8 @@
 
 The Odyssey Travel Companion application provides tourists with up-to-date information on popular attractions, restaurants, and accommodations in the area, so that they can make informed decisions about how to spend their time and money during their trip. Users are able to search for and view information on each item including photos and ratings.
 
+---
+
 ## Table of Contents
 
 - [Description](#description)
@@ -17,11 +19,17 @@ The Odyssey Travel Companion application provides tourists with up-to-date infor
 - [Live Demo](#live-demo)
 - [Contact](#contact)
 
+---
+
 ## Screenshot
+
+
 
 ## Installation
 
 To run the project locally, first install the necessary packages by executing npm install. Once the installation is complete, start the project using npm start.
+
+---
 
 ## Usage
 
@@ -31,17 +39,25 @@ On the About page, you'll find information about the data that can be searched w
 
 To get in touch, visit the Contact page and fill out the provided contact form.
 
+---
+
 ## License
 
 This project is licensed under the MIT License.
+
+---
 
 ## Contributing
 
 To contribute to the project, please fork the repository, and clone it to your local machine.
 
+---
+
 ## Live Demo
 
 https://lovely-torrone-a23b28.netlify.app/
+
+---
 
 ## Contact
 

@@ -2,9 +2,7 @@
     background-color: wheat;
     padding: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
- 
-   
+    margin-bottom: 80px;
 }
 
 .Sbtn {
@@ -15,3 +13,12 @@
     text-size-adjust: auto;
     
 }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .form {
+          min-height: 900px;  
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+      }

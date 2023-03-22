@@ -121,9 +121,9 @@ function Map() {
       libraries={libraries}
     >
 
-      <div className="form-group">
-        <div className="mapSlider">
-          <label htmlFor="search-radius">Search Radius</label>
+      <div className="form-group d-flex">
+        <div className="mapSlider p-2" style={{ border: '1px solid #ccc' }}>
+          <label htmlFor="search-radius">Search Radius: {(radius / 1000).toFixed(2)} KM</label>
           <input
             type="range"
             className="form-control-range"

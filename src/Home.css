@@ -2,10 +2,11 @@
   position: relative;
   height: 350px;
   width: 100%;
+  top: -35px;
 }
 
 .my-image6 {
-  height: 490px;
+  height: 350px;
   width: 100%;
   object-fit: cover;
   position: absolute;
@@ -18,7 +19,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  text-align: center;
   color: #fff;
 }
 
@@ -26,33 +27,27 @@
   font-size: 46px!important;
   font-weight: 300;
   margin-bottom: 1rem;
-  margin-top: -120px;
+  margin-top: -70px;
 }
 
 .lead {
   font-size: 1.5rem;
-  font-weight: 300;
-  margin-top: 15px;
+  font-weight: bold!important;
 }
 
 .my-image,
 .my-image3,
 .my-image5 {
- max-width: 380px;
-  min-height: 250px;
+  flex:1;
+  flex-basis: 33.3%;
+  max-width: 445px; 
+  max-height: 220px; 
 }
+.my-image3 {max-width: 550px;}
 
-/* .my-image3 {
-  max-width: 550px;
-} */
-.jumbotron {
- 
-  padding: 2rem;
-}
 
 .abt4 {
-  margin-top: 30px;
-  padding: 10px;
+  margin-top: -120px;
 }
 
 .wkfun {

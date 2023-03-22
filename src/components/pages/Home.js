@@ -9,7 +9,7 @@ import googleplay from '../google-play-badge.png';
 
 function Home() {
   return (
-    <div className="jumbotron text-center">
+    <div className="inage-container jumbotron text-center">
       <div className="image-container">
         <img className="my-image6" src={travel6} alt="travel6" />
         <div className="text-container">
@@ -21,12 +21,12 @@ function Home() {
           </h2>
         </div>
       </div>
-      {/* <div className="image-container d-flex flex-wrap">
+      <div className="image-container d-flex flex-wrap">
         <img className="my-image" src={travel1} alt="travel1" />
         <img className="my-image3" src={odyssey} alt="odyssey" />
         <img className="my-image5" src={travel5} alt="travel5" />
-      </div>  */}
-      <div className="row">
+      </div> 
+      {/* <div className="row">
                     <div className="col-sm-4 col-md-4 text-center">
 
                         <img className="my-image" src={travel1} alt="travel1" />
@@ -39,7 +39,7 @@ function Home() {
 
                         <img className="my-image5" src={travel5} alt="travel5" />
                     </div>
-                </div> 
+                </div>  */}
       <div className="col-sm-12 col-md-12 col-lg-12 text-center download">
         <h2 className="section-heading abt4">
         Check out our About page to uncover a world of excitement! 

@@ -114,6 +114,22 @@ function Map() {
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"
       libraries={libraries}
     >
+
+      <div className="form-group">
+        <div className="mapSlider">
+          <label htmlFor="search-radius">Search Radius</label>
+          <input
+            type="range"
+            className="form-control-range"
+            min="1000"
+            max="10000"
+            step="100"
+            value={1000}
+            id="search-radius"
+          />
+
+        </div>
+      </div>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

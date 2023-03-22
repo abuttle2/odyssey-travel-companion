@@ -44,7 +44,7 @@ function About() {
                 </div>
                 <p className="text-justify abt5">Enter your city of choice below to search for nearby popular attractions, restaurants and accommodations:</p>
             </div>
-            <div className="container p-3 my-3 col-sm-12 col-lg-6 d-flex justify-content-end" ><Map></Map> </div>
+            <div className="container p-3 my-3 col-sm-12 col-lg-6 d-flex flex-column justify-content-end" ><Map></Map> </div>
         </div>
 
     )

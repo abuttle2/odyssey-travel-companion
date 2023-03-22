@@ -60,6 +60,7 @@ function Map() {
   const [zoom, setZoom] = useState(6);
   const [places, setPlaces] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
+  const [radius, setRadius] = useState(1000); // 1 kilometer
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);
@@ -82,10 +83,18 @@ function Map() {
             lat: place.geometry.location.lat(),
             lng: place.geometry.location.lng(),
           },
-          radius: 1000, // 1 kilometer
+          radius: radius, // 1 kilometer
           type: ['restaurant', 'lodging', 'tourist_attraction']
         }, (results, status) => {
           if (status === 'OK') {
+            results.forEach((result) => {
+              console.log('Place ID:', result.place_id);
+              console.log('Name:', result.name);
+              console.log('Latitude:', result.geometry.location.lat());
+              console.log('Longitude:', result.geometry.location.lng());
+              console.log('Address:', result.vicinity);
+              console.log('');
+            });
             setPlaces(results);
           }
         });
@@ -101,11 +110,33 @@ function Map() {
     setSelectedPlace(null);
   }
 
+  const handleRadiusChange = (event) => {
+    console.log(event.target.value);
+    setRadius(parseInt(event.target.value, 10));
+  };
+
   return (
     <LoadScriptOnlyIfNeeded
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"
       libraries={libraries}
     >
+
+      <div className="form-group d-flex">
+        <div className="mapSlider p-2" style={{ border: '1px solid #ccc' }}>
+          <label htmlFor="search-radius">Search Radius: {(radius / 1000).toFixed(2)} KM</label>
+          <input
+            type="range"
+            className="form-control-range"
+            min="1000"
+            max="10000"
+            step="100"
+            value={radius}
+            onChange={handleRadiusChange}
+            id="search-radius"
+          />
+
+        </div>
+      </div>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

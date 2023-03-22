@@ -4,6 +4,7 @@ import './Navbar.css';
 import './Home.css';
 import './About.css';
 import './ContactUs.css';
+import './footer.css';
 
 import Navbar from './components/pages/Navbar';
 import Home from './components/pages/Home';

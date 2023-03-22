@@ -71,13 +71,16 @@
 /* make the jumbotron text responsive by using media queries */
 
 @media (max-width: 576px) {
-  .jumbotron h1 {
-  font-size: 36px;
+  .topic1 {
+  font-size: 32px!important;
+  margin: 5px;
+ 
   }
   
-  .jumbotron h2 {
-    display: inline;
+  .abt4 {
+  display: inline;
   font-size: 18px;
+   margin-bottom: 10px;
   }
   }
 
@@ -85,15 +88,15 @@
 
 @media (max-width: 576px) {
   .my-image,.my-image3,.my-image5 {
-      width: 210px;
-      height: 200px;
+      max-width: 450px;
+      min-height: 200px;
     
   }
 }
 
 @media (max-width: 576px) {
-.jumbotron {
-  padding-bottom: 290px;
+.my-image6 {
+  margin-top:20px;
 }
 }
   /* make the download text responsive by using media queries */ 
@@ -111,6 +114,8 @@
     margin-top: 10px;
    
   }
+
+ 
 }
   /* make the download images responsive by using media queries */ 
 
@@ -123,9 +128,9 @@
   }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .jumbotron {
     padding-bottom: 30px;
   }
-  }
+  } */
   

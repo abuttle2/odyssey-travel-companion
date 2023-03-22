@@ -9,13 +9,13 @@ The Odyssey Travel Companion application provides tourists with up-to-date infor
 ## Table of Contents
 
 - [Description](#description)
-- [Screenshot](#screenshot)
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Link](#link)
-- [Questions](#questions)
+- [Live Demo](#live-demo)
+- [Contact](#contact)
 
 ## Screenshot
 
@@ -33,10 +33,22 @@ To get in touch, visit the Contact page and fill out the provided contact form.
 
 ## License
 
+This project is licensed under the MIT License.
+
 ## Contributing
 
-## Link
+To contribute to the project, please fork the repository, and clone it to your local machine.
+
+## Live Demo
 
 https://lovely-torrone-a23b28.netlify.app/
 
-## Questions
+## Contact
+
+aobiaderi@yahoo.com - Obiaderi Agbonrofo
+
+willyguille97@gmail.com - Guillermo Serra
+
+adriana.camarotto@gmail.com - Adriana Camarotto
+
+alexbuttle@hotmail.co.uk - Alex Buttle

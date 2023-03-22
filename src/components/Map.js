@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Autocomplete, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Autocomplete, Marker, InfoWindow } from '@react-google-maps/api';
 import debounce from 'lodash.debounce';
 
 const containerStyle = {
@@ -23,7 +23,16 @@ const searchStyle = {
   marginLeft: "-120px"
 };
 
+const infoWindowStyle = {
+  background: 'white',
+  border: '1px solid black',
+  padding: '10px',
+  fontSize: '16px',
+  textAlign: 'center'
+};
+
 const libraries = ["places"];
+
 class LoadScriptOnlyIfNeeded extends LoadScript {
   componentDidMount() {
     const cleaningUp = true
@@ -50,6 +59,7 @@ function Map() {
   const [center, setCenter] = useState({ lat: 54.3781, lng: -2.2137 });
   const [zoom, setZoom] = useState(6);
   const [places, setPlaces] = useState([]);
+  const [selectedPlace, setSelectedPlace] = useState(null);
 
   const onLoad = (autocomplete) => {
     setSearchBox(autocomplete);
@@ -83,6 +93,14 @@ function Map() {
     }
   }, 500);
 
+  const handleMarkerClick = (marker) => {
+    setSelectedPlace(marker);
+  }
+
+  const handleCloseClick = () => {
+    setSelectedPlace(null);
+  }
+
   return (
     <LoadScriptOnlyIfNeeded
       googleMapsApiKey="AIzaSyDm2wAUZtbatfRxowbpWSgRmMh_2Xq3iXY"
@@ -110,8 +128,31 @@ function Map() {
               lat: place.geometry.location.lat(),
               lng: place.geometry.location.lng()
             }}
+            onClick={() => handleMarkerClick(place)}
           />
         ))}
+        {selectedPlace && (
+          <InfoWindow
+            position={{
+              lat: selectedPlace.geometry.location.lat(),
+              lng: selectedPlace.geometry.location.lng(),
+            }}
+            onCloseClick={handleCloseClick}
+            options={{ maxWidth: 300 }}
+          >
+            <div style={infoWindowStyle}>
+              <h2>{selectedPlace.name}</h2>
+              <p>Rating: {selectedPlace.rating}/5</p>
+              {selectedPlace.photos && (
+                <img
+                  src={selectedPlace.photos[0].getUrl()}
+                  alt={selectedPlace.name}
+                  style={{ maxWidth: '75%' }}
+                />
+              )}
+            </div>
+          </InfoWindow>
+        )}
       </GoogleMap>
     </LoadScriptOnlyIfNeeded>
   );

@@ -23,6 +23,10 @@ The Odyssey Travel Companion application provides tourists with up-to-date infor
 
 ## Screenshot
 
+![image](https://user-images.githubusercontent.com/32392106/227049578-3554c298-1be2-4123-9a58-5de8aba4c8b8.png)
+![image](https://user-images.githubusercontent.com/32392106/227050061-15be4206-6f1a-4d62-aa8c-85312ac68477.png)
+![image](https://user-images.githubusercontent.com/32392106/227050230-f0a64759-fe0b-4546-9c81-4853d34be0f8.png)
+
 
 
 ## Installation

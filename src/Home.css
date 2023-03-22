@@ -38,7 +38,7 @@
 .my-image5 {
   flex-basis: 33%;
   flex-grow: 1;
-  max-width: 420px;
+  /* max-width: 420px; */
 }
 
 .my-image3 {

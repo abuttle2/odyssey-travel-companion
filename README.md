@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Odyssey Travel Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![License](https://img.shields.io/badge/license-MIT-red.svg)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+The Odyssey Travel Companion application provides tourists with up-to-date information on popular attractions, restaurants, and accommodations in the area, so that they can make informed decisions about how to spend their time and money during their trip. Users are able to search for and view information on each item including photos and ratings.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Live Demo](#live-demo)
+- [Contact](#contact)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshot
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/32392106/227049578-3554c298-1be2-4123-9a58-5de8aba4c8b8.png)
+![image](https://user-images.githubusercontent.com/32392106/227050061-15be4206-6f1a-4d62-aa8c-85312ac68477.png)
+![image](https://user-images.githubusercontent.com/32392106/227050230-f0a64759-fe0b-4546-9c81-4853d34be0f8.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To run the project locally, first install the necessary packages by executing npm install. Once the installation is complete, start the project using npm start.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Use the website's navigation bar at the top to switch between the Home, About, and Contact pages.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+On the About page, you'll find information about the data that can be searched within the Google Map. To search, simply enter the desired location into the map search bar. As you type, autocomplete suggestions for locations will appear. Upon selecting a location, the map will center on it and display markers representing relevant data points. Click on a marker to view an information window containing the name, photo, and rating of the associated data point. To adjust the search radius for subsequent searches, use the slider located above the map.
 
-## Learn More
+To get in touch, visit the Contact page and fill out the provided contact form.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To contribute to the project, please fork the repository, and clone it to your local machine.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Live Demo
 
-### Advanced Configuration
+https://lovely-torrone-a23b28.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+aobiaderi@yahoo.com - Obiaderi Agbonrofo
 
-### `npm run build` fails to minify
+willyguille97@gmail.com - Guillermo Serra
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+adriana.camarotto@gmail.com - Adriana Camarotto
+
+alexbuttle@hotmail.co.uk - Alex Buttle
